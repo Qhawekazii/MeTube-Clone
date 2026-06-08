@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FakeTube</title>
+  <title>MeTube</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,26 +12,33 @@
       <button class="icon-btn" id="menuBtn" aria-label="Toggle menu">
         <span class="hamburger"></span>
       </button>
-      <h1><span class="play-logo"></span> FakeTube</h1>
+      <h1><span class="play-logo"></span> MeTube</h1>
     </div>
 
-    <form class="search" id="searchForm">
-      <input id="searchInput" type="search" placeholder="Search FakeTube">
-      <button type="submit">Search</button>
-    </form>
+    <div class="search-area">
+      <form class="search" id="searchForm">
+        <input id="searchInput" type="search" placeholder="Search">
+        <button type="submit" aria-label="Search">
+          <span class="search-icon"></span>
+        </button>
+      </form>
+      <button class="icon-btn mic-btn" aria-label="Search with your voice">
+        <span class="mic-icon"></span>
+      </button>
+    </div>
 
-    <button class="icon-btn theme-toggle" id="themeBtn" aria-label="Toggle dark mode">
+    <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">
       <span class="moon-icon"></span>
     </button>
   </header>
 
   <aside class="sidebar" id="sidebar">
-    <a class="active" href="#"><span class="side-icon">&#8962;</span><span>Home</span></a>
-    <a href="#"><span class="side-icon">&#9654;</span><span>Shorts</span></a>
-    <a href="#"><span class="side-icon">&#9638;</span><span>Subscriptions</span></a>
-    <a href="#"><span class="side-icon">&#9636;</span><span>Library</span></a>
-    <a href="#"><span class="side-icon">&#8635;</span><span>History</span></a>
-    <a href="#"><span class="side-icon">&#9776;</span><span>Playlists</span></a>
+    <a class="active" href="#"><span class="side-icon icon-home"></span><span>Home</span></a>
+    <a href="#"><span class="side-icon icon-shorts"></span><span>Shorts</span></a>
+    <a href="#"><span class="side-icon icon-subscriptions"></span><span>Subscriptions</span></a>
+    <a href="#"><span class="side-icon icon-library"></span><span>Library</span></a>
+    <a href="#"><span class="side-icon icon-history"></span><span>History</span></a>
+    <a href="#"><span class="side-icon icon-playlists"></span><span>Playlists</span></a>
   </aside>
 
   <main class="content">
@@ -58,6 +65,4 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
 

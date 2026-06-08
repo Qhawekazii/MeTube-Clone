@@ -127,7 +127,10 @@ playlistBtn.addEventListener("click", () => {
 
 renderVideos();
 
-
+searchInput.addEventListener("input", () => {
+  searchTerm = searchInput.value.trim().toLowerCase();
+  renderVideos();
+});
 
 
 

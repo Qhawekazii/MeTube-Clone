@@ -21,10 +21,8 @@ Beginner-friendly JavaScript homepage clone for the MeTube assignment.
 4. Resize the browser to show the responsive mobile layout.
 5. Keep the video under 5 minutes.
 
-## Netlify Deployment
+##
+Worked on the main branch
 
-1. Go to Netlify and choose "Add new site".
-2. Drag this folder into Netlify Drop, or connect it to GitHub.
-3. Share the live Netlify link with the Loom video.
 
 

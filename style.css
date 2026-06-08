@@ -44,17 +44,15 @@ body.dark {
   font-size: 22px;
 }
 
-
-
 .play-logo {
   display: inline-block;
+  position: relative;
   width: 30px;
   height: 20px;
   margin-right: 4px;
   vertical-align: -3px;
   background: #ff0033;
   border-radius: 5px;
-  position: relative;
 }
 
 .play-logo::after {
@@ -97,6 +95,27 @@ body.dark {
   top: 6px;
 }
 
+.search-icon {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  position: relative;
+}
+
+.search-icon::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  right: -7px;
+  bottom: -4px;
+  background: currentColor;
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
 .moon-icon {
   display: block;
   width: 17px;
@@ -134,8 +153,12 @@ body.dark .moon-icon {
 }
 
 .dark .icon-btn {
-  color: #ffffff;
-  background: #272727;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: #f2f2f2;
 }
 
 .dark .search input,
@@ -171,20 +194,189 @@ body.dark .moon-icon {
 
 
 .side-icon {
-  display: grid;
-  place-items: center;
+  position: relative;
+  flex: 0 0 24px;
   width: 24px;
   height: 24px;
-  font-size: 19px;
-  line-height: 1;
+  color: currentColor;
 }
 
-.sidebar a:hover,
+
+.icon-home::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 9px;
+  width: 16px;
+  height: 11px;
+  border: 2px solid currentColor;
+  border-top: 0;
+}
+
+.icon-home::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  transform: rotate(45deg);
+}
+
+.icon-shorts::before,
+.icon-subscriptions::before,
+.icon-library::before {
+  content: "";
+  position: absolute;
+  inset: 4px 3px;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+}
+
+.icon-shorts::after,
+.icon-subscriptions::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  border-left: 7px solid currentColor;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.icon-subscriptions::before {
+  box-shadow: -3px -3px 0 -1px currentColor;
+}
+
+.icon-library::after,
+.icon-playlists::before,
+.icon-playlists::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  width: 14px;
+  height: 2px;
+  background: currentColor;
+  box-shadow: 0 6px 0 currentColor, 0 12px 0 currentColor;
+}
+
+.icon-library::after,
+.icon-playlists::before {
+  top: 6px;
+}
+
+.icon-history::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+}
+
+.icon-history::after {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  border-left: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+}
+
 .sidebar .active {
   background: #f2f2f2;
 }
 
-.dark .sidebar a:hover,
+.dark 
+.icon-home::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 9px;
+  width: 16px;
+  height: 11px;
+  border: 2px solid currentColor;
+  border-top: 0;
+}
+
+.icon-home::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  transform: rotate(45deg);
+}
+
+.icon-shorts::before,
+.icon-subscriptions::before,
+.icon-library::before {
+  content: "";
+  position: absolute;
+  inset: 4px 3px;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+}
+
+.icon-shorts::after,
+.icon-subscriptions::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  border-left: 7px solid currentColor;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.icon-subscriptions::before {
+  box-shadow: -3px -3px 0 -1px currentColor;
+}
+
+.icon-library::after,
+.icon-playlists::before,
+.icon-playlists::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  width: 14px;
+  height: 2px;
+  background: currentColor;
+  box-shadow: 0 6px 0 currentColor, 0 12px 0 currentColor;
+}
+
+.icon-library::after,
+.icon-playlists::before {
+  top: 6px;
+}
+
+.icon-history::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+}
+
+.icon-history::after {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  border-left: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+}
+
 .dark .sidebar .active {
   background: #272727;
 }
@@ -390,11 +582,5 @@ body.dark .moon-icon {
     flex-direction: column;
   }
 }
-
-
-
-
-
-
 
 

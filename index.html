@@ -9,25 +9,31 @@
 <body>
   <header class="top-bar">
     <div class="brand">
-      <button class="icon-btn" id="menuBtn" aria-label="Toggle menu">Menu</button>
+      <button class="icon-btn" id="menuBtn" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
       <h1><span class="play-logo"></span> MeTube</h1>
     </div>
 
     <form class="search" id="searchForm">
       <input id="searchInput" type="search" placeholder="Search">
-      <button type="submit">Search</button>
+      <button type="submit" aria-label="Search">
+        <span class="search-icon"></span>
+      </button>
     </form>
 
-    <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">Dark</button>
+    <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">
+      <span class="moon-icon"></span>
+    </button>
   </header>
 
   <aside class="sidebar" id="sidebar">
-    <a class="active" href="#">Home</a>
-    <a href="#">Shorts</a>
-    <a href="#">Subscriptions</a>
-    <a href="#">Library</a>
-    <a href="#">History</a>
-    <a href="#">Playlists</a>
+    <a class="active" href="#"><span class="side-icon icon-home"></span><span>Home</span></a>
+    <a href="#"><span class="side-icon icon-shorts"></span><span>Shorts</span></a>
+    <a href="#"><span class="side-icon icon-subscriptions"></span><span>Subscriptions</span></a>
+    <a href="#"><span class="side-icon icon-library"></span><span>Library</span></a>
+    <a href="#"><span class="side-icon icon-history"></span><span>History</span></a>
+    <a href="#"><span class="side-icon icon-playlists"></span><span>Playlists</span></a>
   </aside>
 
   <main class="content">
@@ -54,5 +60,6 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 

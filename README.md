@@ -1,6 +1,6 @@
-﻿# FakeTube YouTube Clone
+﻿# MeTube YouTube Clone
 
-Beginner-friendly JavaScript homepage clone for the FakeTube assignment.
+Beginner-friendly JavaScript homepage clone for the MeTube assignment.
 
 ## Assignment Checklist
 
@@ -26,4 +26,5 @@ Beginner-friendly JavaScript homepage clone for the FakeTube assignment.
 1. Go to Netlify and choose "Add new site".
 2. Drag this folder into Netlify Drop, or connect it to GitHub.
 3. Share the live Netlify link with the Loom video.
+
 

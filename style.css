@@ -287,96 +287,12 @@ body.dark .moon-icon {
   border-bottom: 2px solid currentColor;
 }
 
+.sidebar a:hover,
 .sidebar .active {
   background: #f2f2f2;
 }
 
-.dark 
-.icon-home::before {
-  content: "";
-  position: absolute;
-  left: 4px;
-  top: 9px;
-  width: 16px;
-  height: 11px;
-  border: 2px solid currentColor;
-  border-top: 0;
-}
-
-.icon-home::after {
-  content: "";
-  position: absolute;
-  left: 6px;
-  top: 3px;
-  width: 12px;
-  height: 12px;
-  border-left: 2px solid currentColor;
-  border-top: 2px solid currentColor;
-  transform: rotate(45deg);
-}
-
-.icon-shorts::before,
-.icon-subscriptions::before,
-.icon-library::before {
-  content: "";
-  position: absolute;
-  inset: 4px 3px;
-  border: 2px solid currentColor;
-  border-radius: 4px;
-}
-
-.icon-shorts::after,
-.icon-subscriptions::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 10px;
-  border-left: 7px solid currentColor;
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
-}
-
-.icon-subscriptions::before {
-  box-shadow: -3px -3px 0 -1px currentColor;
-}
-
-.icon-library::after,
-.icon-playlists::before,
-.icon-playlists::after {
-  content: "";
-  position: absolute;
-  left: 5px;
-  width: 14px;
-  height: 2px;
-  background: currentColor;
-  box-shadow: 0 6px 0 currentColor, 0 12px 0 currentColor;
-}
-
-.icon-library::after,
-.icon-playlists::before {
-  top: 6px;
-}
-
-.icon-history::before {
-  content: "";
-  position: absolute;
-  inset: 4px;
-  border: 2px solid currentColor;
-  border-right-color: transparent;
-  border-radius: 50%;
-}
-
-.icon-history::after {
-  content: "";
-  position: absolute;
-  left: 11px;
-  top: 7px;
-  width: 6px;
-  height: 6px;
-  border-left: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-}
-
+.dark .sidebar a:hover,
 .dark .sidebar .active {
   background: #272727;
 }
@@ -582,5 +498,7 @@ body.dark .moon-icon {
     flex-direction: column;
   }
 }
+
+
 
 
